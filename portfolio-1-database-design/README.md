@@ -73,3 +73,14 @@ Work-order status CHECK constraint test
 Portfolio 1 establishes the relational database foundation for the ApexPetro Energy Limited Operations & Maintenance Management System. The resulting database design provides structured relationships between operational assets, equipment, maintenance processes, inspections, failures, spare parts, inventory transactions, employees and vendors.
 
 The database model and SQL implementation provide the foundation for the subsequent query processing, transaction management, NoSQL and distributed/cloud database activities in the MIT 8103 portfolio.
+
+# Technical Reflection
+The principal design decision was to separate the operational data into distinct entities representing assets, equipment, employees, work orders, maintenance activities, inspections, equipment failures, spare parts, inventory transactions and vendors. This structure reduced unnecessary duplication and made the relationships between operational and maintenance records clearer.
+
+Associative tables were introduced to resolve the many-to-many relationships between maintenance activities and spare parts, and between vendors and spare parts. Primary keys, foreign keys, composite keys, unique constraints and CHECK constraints were then used to enforce the business rules at database level.
+
+A key challenge was maintaining consistency between the business rules, ER diagram, relational schema and SQL implementation. This was addressed by comparing each relationship in the ER diagram with the corresponding primary and foreign keys in the SQL schema. The schema was subsequently executed and tested using valid and deliberately invalid data.
+
+The testing confirmed that valid records could be inserted successfully and that the database rejected invalid foreign-key references, duplicate equipment serial numbers, negative stock quantities and unsupported work-order status values.
+
+This activity improved my understanding of relational modelling, normalisation, referential integrity and database constraints. It also demonstrated that a database design should not be considered complete until its relationships and integrity controls have been practically tested.
