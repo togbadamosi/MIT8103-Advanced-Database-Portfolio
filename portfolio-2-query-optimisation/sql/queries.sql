@@ -162,27 +162,53 @@ ORDER BY work_order_count DESC, emp.last_name;
 
 -- ============================================================
 -- QUERY 8: ASSET MAINTENANCE PERFORMANCE SUMMARY
--- Purpose: Provide a consolidated asset-level maintenance summary.
--- This query will be considered for execution-plan analysis.
+-- Purpose: Provide a consolidated asset-level maintenance
+-- summary without duplication from multiple one-to-many joins.
 -- ============================================================
+
+WITH work_order_summary AS (
+    SELECT
+        e.asset_id,
+        COUNT(DISTINCT wo.work_order_id) AS work_order_count,
+        COALESCE(SUM(ma.activity_cost), 0) AS total_maintenance_cost
+    FROM equipment e
+    LEFT JOIN work_order wo
+        ON e.equipment_id = wo.equipment_id
+    LEFT JOIN maintenance_activity ma
+        ON wo.work_order_id = ma.work_order_id
+    GROUP BY e.asset_id
+),
+
+failure_summary AS (
+    SELECT
+        e.asset_id,
+        COUNT(ef.failure_id) AS failure_count
+    FROM equipment e
+    LEFT JOIN equipment_failure ef
+        ON e.equipment_id = ef.equipment_id
+    GROUP BY e.asset_id
+),
+
+equipment_summary AS (
+    SELECT
+        asset_id,
+        COUNT(equipment_id) AS equipment_count
+    FROM equipment
+    GROUP BY asset_id
+)
 
 SELECT
     a.asset_id,
     a.asset_name,
-    COUNT(DISTINCT e.equipment_id) AS equipment_count,
-    COUNT(DISTINCT wo.work_order_id) AS work_order_count,
-    COUNT(DISTINCT ef.failure_id) AS failure_count,
-    COALESCE(SUM(ma.activity_cost), 0) AS total_maintenance_cost
+    COALESCE(es.equipment_count, 0) AS equipment_count,
+    COALESCE(ws.work_order_count, 0) AS work_order_count,
+    COALESCE(fs.failure_count, 0) AS failure_count,
+    COALESCE(ws.total_maintenance_cost, 0) AS total_maintenance_cost
 FROM asset a
-LEFT JOIN equipment e
-    ON a.asset_id = e.asset_id
-LEFT JOIN work_order wo
-    ON e.equipment_id = wo.equipment_id
-LEFT JOIN maintenance_activity ma
-    ON wo.work_order_id = ma.work_order_id
-LEFT JOIN equipment_failure ef
-    ON e.equipment_id = ef.equipment_id
-GROUP BY
-    a.asset_id,
-    a.asset_name
+LEFT JOIN equipment_summary es
+    ON a.asset_id = es.asset_id
+LEFT JOIN work_order_summary ws
+    ON a.asset_id = ws.asset_id
+LEFT JOIN failure_summary fs
+    ON a.asset_id = fs.asset_id
 ORDER BY total_maintenance_cost DESC;
