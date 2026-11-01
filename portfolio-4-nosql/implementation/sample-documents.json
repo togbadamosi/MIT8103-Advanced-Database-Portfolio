@@ -1,0 +1,277 @@
+[
+  {
+    "inspection_id": "INS-001",
+    "equipment": {
+      "equipment_id": 1,
+      "equipment_name": "Crude Transfer Pump P-101",
+      "equipment_type": "Pump",
+      "serial_number": "ATP-P101-001"
+    },
+    "asset": {
+      "asset_id": 1,
+      "asset_name": "Alpha Processing Facility",
+      "location": "Alpha Field"
+    },
+    "inspection_date": "2026-08-01",
+    "inspector": {
+      "employee_id": 4,
+      "name": "Chinedu Eze",
+      "role": "Inspection Engineer"
+    },
+    "condition": "Satisfactory",
+    "measurements": {
+      "temperature_c": 68.5,
+      "vibration_mm_s": 2.8,
+      "discharge_pressure_bar": 12.4
+    },
+    "observations": [
+      "No abnormal vibration observed",
+      "No visible leakage detected"
+    ],
+    "recommendations": [
+      "Continue routine monitoring"
+    ]
+  },
+  {
+    "inspection_id": "INS-002",
+    "equipment": {
+      "equipment_id": 2,
+      "equipment_name": "Gas Compressor C-101",
+      "equipment_type": "Compressor",
+      "serial_number": "AGC-C101-001"
+    },
+    "asset": {
+      "asset_id": 1,
+      "asset_name": "Alpha Processing Facility",
+      "location": "Alpha Field"
+    },
+    "inspection_date": "2026-08-10",
+    "inspector": {
+      "employee_id": 4,
+      "name": "Chinedu Eze",
+      "role": "Inspection Engineer"
+    },
+    "condition": "Attention Required",
+    "measurements": {
+      "temperature_c": 82.0,
+      "vibration_mm_s": 5.7,
+      "suction_pressure_bar": 4.2,
+      "discharge_pressure_bar": 18.6
+    },
+    "observations": [
+      "Elevated vibration detected",
+      "Bearing noise observed during operation"
+    ],
+    "recommendations": [
+      "Inspect compressor bearing",
+      "Check coupling alignment",
+      "Schedule corrective maintenance"
+    ]
+  },
+  {
+    "inspection_id": "INS-003",
+    "equipment": {
+      "equipment_id": 4,
+      "equipment_name": "Export Pump P-201",
+      "equipment_type": "Pump",
+      "serial_number": "BEP-P201-001"
+    },
+    "asset": {
+      "asset_id": 2,
+      "asset_name": "Bravo Flow Station",
+      "location": "Bravo Field"
+    },
+    "inspection_date": "2026-09-01",
+    "inspector": {
+      "employee_id": 4,
+      "name": "Chinedu Eze",
+      "role": "Inspection Engineer"
+    },
+    "condition": "Satisfactory",
+    "measurements": {
+      "temperature_c": 65.0,
+      "vibration_mm_s": 2.4,
+      "discharge_pressure_bar": 11.8
+    },
+    "observations": [
+      "Pump operating within expected parameters",
+      "No abnormal noise detected"
+    ],
+    "recommendations": [
+      "Continue preventive maintenance programme"
+    ]
+  },
+  {
+    "inspection_id": "INS-004",
+    "equipment": {
+      "equipment_id": 6,
+      "equipment_name": "Separator V-201",
+      "equipment_type": "Separator",
+      "serial_number": "BSV-V201-001"
+    },
+    "asset": {
+      "asset_id": 2,
+      "asset_name": "Bravo Flow Station",
+      "location": "Bravo Field"
+    },
+    "inspection_date": "2026-09-15",
+    "inspector": {
+      "employee_id": 4,
+      "name": "Chinedu Eze",
+      "role": "Inspection Engineer"
+    },
+    "condition": "Attention Required",
+    "measurements": {
+      "operating_pressure_bar": 9.8,
+      "liquid_level_percent": 72,
+      "control_response_seconds": 4.5
+    },
+    "observations": [
+      "Level-control response was inconsistent",
+      "Liquid level approached the upper operating range"
+    ],
+    "recommendations": [
+      "Inspect level-control instrument",
+      "Check control valve response",
+      "Monitor liquid level closely"
+    ]
+  },
+  {
+    "inspection_id": "INS-005",
+    "equipment": {
+      "equipment_id": 7,
+      "equipment_name": "Storage Pump P-301",
+      "equipment_type": "Pump",
+      "serial_number": "DSP-P301-001"
+    },
+    "asset": {
+      "asset_id": 3,
+      "asset_name": "Delta Storage Terminal",
+      "location": "Delta Field"
+    },
+    "inspection_date": "2026-09-20",
+    "inspector": {
+      "employee_id": 4,
+      "name": "Chinedu Eze",
+      "role": "Inspection Engineer"
+    },
+    "condition": "Satisfactory",
+    "measurements": {
+      "temperature_c": 63.5,
+      "vibration_mm_s": 2.1,
+      "discharge_pressure_bar": 10.9
+    },
+    "observations": [
+      "No abnormal operating condition observed",
+      "Pump casing was free from visible leakage"
+    ],
+    "recommendations": [
+      "Maintain current inspection frequency"
+    ]
+  },
+  {
+    "inspection_id": "INS-006",
+    "equipment": {
+      "equipment_id": 9,
+      "equipment_name": "Production Pump P-401",
+      "equipment_type": "Pump",
+      "serial_number": "EPP-P401-001"
+    },
+    "asset": {
+      "asset_id": 4,
+      "asset_name": "Echo Production Facility",
+      "location": "Echo Field"
+    },
+    "inspection_date": "2026-09-28",
+    "inspector": {
+      "employee_id": 4,
+      "name": "Chinedu Eze",
+      "role": "Inspection Engineer"
+    },
+    "condition": "Attention Required",
+    "measurements": {
+      "temperature_c": 71.0,
+      "vibration_mm_s": 4.9,
+      "discharge_pressure_bar": 8.2
+    },
+    "observations": [
+      "Discharge pressure was below the expected operating range",
+      "Suction strainer may require cleaning"
+    ],
+    "recommendations": [
+      "Inspect suction strainer",
+      "Check discharge valve",
+      "Schedule corrective maintenance"
+    ]
+  },
+  {
+    "inspection_id": "INS-007",
+    "equipment": {
+      "equipment_id": 10,
+      "equipment_name": "Gas Compressor C-401",
+      "equipment_type": "Compressor",
+      "serial_number": "EGC-C401-001"
+    },
+    "asset": {
+      "asset_id": 4,
+      "asset_name": "Echo Production Facility",
+      "location": "Echo Field"
+    },
+    "inspection_date": "2026-10-01",
+    "inspector": {
+      "employee_id": 4,
+      "name": "Chinedu Eze",
+      "role": "Inspection Engineer"
+    },
+    "condition": "Satisfactory",
+    "measurements": {
+      "temperature_c": 76.5,
+      "vibration_mm_s": 3.2,
+      "suction_pressure_bar": 4.0,
+      "discharge_pressure_bar": 17.9
+    },
+    "observations": [
+      "Compressor operating within expected parameters",
+      "No abnormal bearing noise detected"
+    ],
+    "recommendations": [
+      "Continue monthly inspection"
+    ]
+  },
+  {
+    "inspection_id": "INS-008",
+    "equipment": {
+      "equipment_id": 5,
+      "equipment_name": "Generator G-201",
+      "equipment_type": "Generator",
+      "serial_number": "BGN-G201-001"
+    },
+    "asset": {
+      "asset_id": 2,
+      "asset_name": "Bravo Flow Station",
+      "location": "Bravo Field"
+    },
+    "inspection_date": "2026-10-05",
+    "inspector": {
+      "employee_id": 4,
+      "name": "Chinedu Eze",
+      "role": "Inspection Engineer"
+    },
+    "condition": "Attention Required",
+    "measurements": {
+      "engine_temperature_c": 91.0,
+      "oil_pressure_bar": 2.7,
+      "output_voltage_v": 398,
+      "frequency_hz": 49.6
+    },
+    "observations": [
+      "Engine temperature was above the preferred operating range",
+      "Oil pressure was slightly below the expected level"
+    ],
+    "recommendations": [
+      "Replace engine oil",
+      "Inspect oil filter",
+      "Verify generator output after servicing"
+    ]
+  }
+]
