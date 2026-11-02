@@ -8,8 +8,8 @@ A document-oriented approach is used to represent inspection information using n
 
 All information and records used in this activity are synthetic and created solely for academic purposes.
 
-## Planned Activities
-This portfolio will demonstrate:
+## Completed Activities
+This portfolio demonstrates:
 
 1. Design of a NoSQL document model for equipment inspection and condition-monitoring information.
 2. Creation of synthetic inspection documents.
@@ -18,24 +18,6 @@ This portfolio will demonstrate:
 5. Updating NoSQL documents.
 6. Analysis of the suitability of the document model for the selected use case.
 7. Practical execution and screenshot evidence.
-
-Add sections covering:
-
-NoSQL document model: model/nosql-data-model.md
-
-Synthetic dataset: implementation/sample-documents.json
-
-MongoDB queries: implementation/queries.js
-
-Practical implementation
-
-Document update
-
-Aggregation
-
-Suitability analysis: analysis/nosql-suitability-analysis.md
-
-Evidence: evidence/README.md
 
 ## Technical Reflection
 The main objective of this portfolio activity was to understand how a document-oriented NoSQL model can complement a relational database when data structures vary between records.
