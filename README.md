@@ -1,59 +1,69 @@
-# MIT 8103 ADVANCED DATABASE SYSTEMS
-# CONTINUOUS ASSESSMENT PORTFOLIO
+# MIT8103 Advanced Database Systems Portfolio
+This repository contains my practical portfolio for MIT 8103 Advanced Database Systems.
 
-# Student Name: Taofeek Gbadamosi
-# Student ID: 301887647
-# Student Email: t.gbadamosi7647@miva.edu.ng
-# Case Study: ApexPetro Energy Limited
+The portfolio is based on the fictional **ApexPetro Energy Limited Operations & Maintenance Management System** and demonstrates the progressive application of relational database design, SQL query processing and optimisation, transaction management, NoSQL document modelling, and distributed/cloud database concepts.
 
-# GITHUB REPOSITORY
+## Student Information
 
-https://github.com/togbadamosi/MIT8103-Advanced-Database-Portfolio
+**Student Name:** Taofeek Gbadamosi
 
-The GitHub repository contains the complete technical portfolio and supporting implementation evidence. The repository will be made accessible to the assessor.
+**Student ID:** 301887647
 
-# SUBMISSION CONTENTS
+**Course:** MIT 8103 Advanced Database Systems
 
-## 1. Gbadamosi_Taofeek_301887647_PortfolioSummary.docx
+**Case Study:** ApexPetro Energy Limited
 
-   This contains the concise 2–3-page assessment documentation covering all five portfolio activities, technical reflection, AI use declaration and references.
+## Portfolio Components
+### Portfolio 1: Database Design and Modelling
 
-## 2. portfolio-1-database-design
+Contains the case-study description, business rules, ER diagram, relational schema, keys and constraints, normalisation analysis, SQL implementation and database-testing evidence.
 
-   Contains the case-study description, business rules, ER diagram, relational schema, keys and constraints, normalisation analysis and database-testing evidence.
+### Portfolio 2: Query Processing and Optimisation
 
-## 3. portfolio-2-query-optimisation
+Contains synthetic sample data, operational SQL queries, query results, execution plans, indexing and optimisation analysis, and supporting evidence.
 
-   Contains synthetic sample data, operational SQL queries, query results, execution plans, optimisation script, performance analysis and supporting evidence.
+### Portfolio 3: Transactions and Concurrency
 
-## 4. portfolio-3-transactions-concurrency
+Contains practical demonstrations of COMMIT, ROLLBACK, transaction isolation, row-level concurrency control and supporting execution evidence.
 
-   Contains COMMIT, ROLLBACK, transaction-isolation and row-lock concurrency-control demonstrations, analysis and practical execution evidence.
+### Portfolio 4: NoSQL and Advanced Data Models
 
-## 5. portfolio-4-nosql
+Contains the NoSQL document model, synthetic equipment-inspection documents, MongoDB queries, practical MongoDB Atlas implementation, suitability analysis and supporting evidence.
 
-   Contains the NoSQL document model, synthetic inspection documents, MongoDB queries, NoSQL suitability analysis and MongoDB Atlas implementation evidence.
+### Portfolio 5: Distributed and Cloud Database
 
-## 6. portfolio-5-distributed-cloud
+Contains the proposed distributed/cloud database architecture, replication and availability analysis, sharding and data-distribution analysis, consistency analysis, MongoDB Atlas cloud-deployment evidence and monitoring evidence.
 
-   Contains the distributed/cloud database architecture, replication and availability analysis, sharding and data-distribution analysis, consistency analysis, cloud-deployment evidence and MongoDB Atlas monitoring evidence.
+## Case Study
+**ApexPetro Energy Limited** is a fictional organisation created solely for this academic portfolio.
 
-## 7. Gbadamosi_Taofeek_301887647_AIUseDeclaration.txt
+All organisations, operational locations, database records, inspection records and business scenarios used in this repository are synthetic and were created for academic purposes.
 
-   Contains the declaration of AI use, including the AI tool used, the purposes for which it was used, and how AI-assisted outputs were reviewed, tested and verified.
+No confidential or proprietary company information has been used.
 
-# IMPORTANT NOTES
+### Repository Structure
+MIT8103-Advanced-Database-Portfolio/
+│
+├── portfolio-1-database-design/
+├── portfolio-2-query-optimisation/
+├── portfolio-3-transactions-concurrency/
+├── portfolio-4-nosql/
+├── portfolio-5-distributed-cloud/
+├── AI-USE-DECLARATION.md
+└── README.md
 
-- ApexPetro Energy Limited is a fictional organisation created solely for this academic portfolio.
-  
-- All operational records, inspection records, locations and business scenarios are synthetic.
-  
-- No confidential or proprietary company information has been used.
-  
-- SQL and NoSQL implementations were practically executed and reviewed.
-  
-- Supporting screenshots are retained within the relevant evidence folders.
-  
-- Proposed distributed database components are clearly distinguished from cloud components that were practically implemented.
-  
-- The MongoDB Atlas deployment and monitoring evidence represents actual cloud implementation undertaken for the portfolio.
+Each portfolio folder contains its relevant technical documentation, implementation files, analysis, README and supporting evidence.
+
+## AI Use
+
+Microsoft 365 Copilot was used as a learning, drafting and technical-assistance tool during development of this portfolio.
+
+A detailed declaration explaining the purposes for which AI was used and how AI-assisted outputs were reviewed, tested and verified is provided in:
+
+AI-USE-DECLARATION.md
+
+## Important Note
+
+The practical implementation evidence contained in this repository reflects work that was actually executed and verified.
+
+Where distributed database concepts such as sharding, multi-region deployment or deliberate failover testing were analysed but not practically implemented, this distinction is clearly stated in the relevant portfolio documentation.
